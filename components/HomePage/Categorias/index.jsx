@@ -7,11 +7,11 @@ export default function index(Categorias) {
                 Categorias.campos.map((categorias) => (
                     <div key={categorias} className="p-1 cursor-pointer hover:bg-gray-50">
 
-                        <div className="h-16 p-1 border border-solid rounded border-black-100">
+                        <div className="h-16 w-28 p-1 border border-solid rounded border-black-100">
 
                         </div>
 
-                        <div className="p-1 cursor-pointer hover:bg-gray-50">
+                        <div className="p-1 cursor-pointer hover:bg-gray-50 flex justify-center">
                             {categorias}
                         </div>
 

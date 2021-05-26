@@ -1,18 +1,20 @@
-import { Home, Search, Clipboard, User } from 'react-feather';
+import { FiHome, FiSearch, FiClipboard, FiUser, FiGrid } from 'react-icons/fi';
+import { HiOutlineQrcode } from 'react-icons/hi';
 
 import Filtros from '../components/HomePage/Filtros'
 import Categorias from '../components/HomePage/Categorias'
+import Lojas from '../components/HomePage/Lojas'
 
 export default function HomePage() {
   return (
 
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen pb-2">
 
       <div className="flex-1 h-screen p-5 mb-auto overflow-y-auto bg-white">
 
-        <div className="flex justify-between w-full px-1">
+        <div className="flex justify-between items-center w-full px-1">
           <div className="cursor-pointer hover:bg-gray-50">R. Francisca Miquelina, 177 </div>
-          <div className="cursor-pointer hover:bg-gray-50">Icone</div>
+          <HiOutlineQrcode className=" cursor-pointer stroke-current text-red-400"/>
         </div>
 
         <div className="flex pt-4 space-x-4">
@@ -20,22 +22,9 @@ export default function HomePage() {
           <div className="font-semibold text-red-600 border-b border-white cursor-pointer hover:border-red-500">Mercados</div>
         </div>
 
-        <Filtros
-          campos={
-            [
-              "Ordernar",
-              "Pra retirar",
-              "Entrega grátis",
-              "vale-refeição",
-              "Distância",
-              "Entrega Parceira",
-              "Super Restaurante",
-              "Filtros"
-            ]
-          }
-        />
+        <Filtros />
 
-        <Categorias 
+        <Categorias
           campos={
             [
               "Mercado",
@@ -57,189 +46,6 @@ export default function HomePage() {
           }
         />
 
-        {/* <div className="flex pt-3 space-x-2 overflow-x-scroll no-scrollbar">
-
-          <div className="p-1 cursor-pointer hover:bg-gray-50">
-
-            <div className="h-16 p-1 border border-solid rounded border-black-100">
-
-            </div>
-
-            <div className="p-1 cursor-pointer hover:bg-gray-50">
-              TesteTeste
-            </div>
-
-          </div>
-
-          <div className="p-1 cursor-pointer hover:bg-gray-50">
-
-            <div className="h-16 p-1 border border-solid rounded border-black-100">
-
-            </div>
-
-            <div className="p-1 cursor-pointer hover:bg-gray-50">
-              TesteTeste
-            </div>
-
-          </div>
-
-          <div className="p-1 cursor-pointer hover:bg-gray-50">
-
-            <div className="h-16 p-1 border border-solid rounded border-black-100">
-
-            </div>
-
-            <div className="p-1 cursor-pointer hover:bg-gray-50">
-              TesteTeste
-            </div>
-
-          </div>
-
-          <div className="p-1 cursor-pointer hover:bg-gray-50">
-
-            <div className="h-16 p-1 border border-solid rounded border-black-100">
-
-            </div>
-
-            <div className="p-1 cursor-pointer hover:bg-gray-50">
-              TesteTeste
-            </div>
-
-          </div>
-
-          <div className="p-1 cursor-pointer hover:bg-gray-50">
-
-            <div className="h-16 p-1 border border-solid rounded border-black-100">
-
-            </div>
-
-            <div className="p-1 cursor-pointer hover:bg-gray-50">
-              TesteTeste
-            </div>
-
-          </div>
-
-          <div className="p-1 cursor-pointer hover:bg-gray-50">
-
-            <div className="h-16 p-1 border border-solid rounded border-black-100">
-
-            </div>
-
-            <div className="p-1 cursor-pointer hover:bg-gray-50">
-              TesteTeste
-            </div>
-
-          </div>
-
-          <div className="p-1 cursor-pointer hover:bg-gray-50">
-
-            <div className="h-16 p-1 border border-solid rounded border-black-100">
-
-            </div>
-
-            <div className="p-1 cursor-pointer hover:bg-gray-50">
-              TesteTeste
-            </div>
-
-          </div>
-
-          <div className="p-1 cursor-pointer hover:bg-gray-50">
-
-            <div className="h-16 p-1 border border-solid rounded border-black-100">
-
-            </div>
-
-            <div className="p-1 cursor-pointer hover:bg-gray-50">
-              TesteTeste
-            </div>
-
-          </div>
-
-          <div className="p-1 cursor-pointer hover:bg-gray-50">
-
-            <div className="h-16 p-1 border border-solid rounded border-black-100">
-
-            </div>
-
-            <div className="p-1 cursor-pointer hover:bg-gray-50">
-              TesteTeste
-            </div>
-
-          </div>
-
-          <div className="p-1 cursor-pointer hover:bg-gray-50">
-
-            <div className="h-16 p-1 border border-solid rounded border-black-100">
-
-            </div>
-
-            <div className="p-1 cursor-pointer hover:bg-gray-50">
-              TesteTeste
-            </div>
-
-          </div>
-
-          <div className="p-1 cursor-pointer hover:bg-gray-50">
-
-            <div className="h-16 p-1 border border-solid rounded border-black-100">
-
-            </div>
-
-            <div className="p-1 cursor-pointer hover:bg-gray-50">
-              TesteTeste
-            </div>
-
-          </div>
-
-          <div className="p-1 cursor-pointer hover:bg-gray-50">
-
-            <div className="h-16 p-1 border border-solid rounded border-black-100">
-
-            </div>
-
-            <div className="p-1 cursor-pointer hover:bg-gray-50">
-              TesteTeste
-            </div>
-
-          </div>
-
-          <div className="p-1 cursor-pointer hover:bg-gray-50">
-
-            <div className="h-16 p-1 border border-solid rounded border-black-100">
-
-            </div>
-
-            <div className="p-1 cursor-pointer hover:bg-gray-50">
-              TesteTeste
-            </div>
-
-          </div>
-
-          <div className="p-1 cursor-pointer hover:bg-gray-50">
-
-            <div className="h-16 p-1 border border-solid rounded border-black-100">
-
-            </div>
-
-            <div className="p-1 cursor-pointer hover:bg-gray-50">
-              TesteTeste
-            </div>
-
-          </div>
-
-          <div className="p-1 cursor-pointer hover:bg-gray-50">
-
-            <div className="h-16 p-1 border border-solid rounded border-black-100">
-
-            </div>
-
-            <div className="p-1 cursor-pointer hover:bg-gray-50">
-              TesteTeste
-            </div>
-
-          </div>
-        </div> */}
-
         <div className="flex w-full pt-3 space-x-2 overflow-x-scroll no-scrollbar flex-nowrap">
           <div className="flex-none h-32 p-1 m-1 border border-solid rounded cursor-pointer hover:bg-gray-50 w-72 border-black-100">TesteTeste</div>
           <div className="flex-none h-32 p-1 m-1 border border-solid rounded cursor-pointer hover:bg-gray-50 w-72 border-black-100">TesteTeste</div>
@@ -252,13 +58,17 @@ export default function HomePage() {
           <div className="flex-none h-32 p-1 m-1 border border-solid rounded cursor-pointer hover:bg-gray-50 w-72 border-black-100">TesteTeste</div>
         </div>
 
+
+
+        <Lojas />
+
       </div>
 
-      <div className="fixed bottom-0 flex items-center justify-between w-full h-10 px-5 border-t border-gray-50">
-        <Home className="text-red-600 stroke-current " />
-        <Search className="" />
-        <Clipboard className="" />
-        <User className="" />
+      <div className="fixed bottom-0 flex items-center justify-between w-full h-8 px-5 bg-gray-50">
+        <FiHome className="text-red-600 stroke-current " />
+        <FiSearch className="" />
+        <FiClipboard className="" />
+        <FiUser className="" />
       </div>
 
     </div>
