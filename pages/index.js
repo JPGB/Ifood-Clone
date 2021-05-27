@@ -12,9 +12,9 @@ export default function HomePage() {
 
       <div className="flex-1 h-screen p-5 mb-auto overflow-y-auto bg-white">
 
-        <div className="flex justify-between items-center w-full px-1">
+        <div className="flex items-center justify-between w-full px-1">
           <div className="cursor-pointer hover:bg-gray-50">R. Francisca Miquelina, 177 </div>
-          <HiOutlineQrcode className=" cursor-pointer stroke-current text-red-400"/>
+          <HiOutlineQrcode className="text-red-400 cursor-pointer stroke-current " />
         </div>
 
         <div className="flex pt-4 space-x-4">
@@ -75,3 +75,12 @@ export default function HomePage() {
 
   )
 }
+
+
+/**
+ * PurgeCSS:
+ * w-12
+ * h-12
+ * w-8/12
+ *
+ */
