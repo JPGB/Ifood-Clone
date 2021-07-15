@@ -4,6 +4,7 @@ import { HiOutlineQrcode } from 'react-icons/hi';
 import Filtros from '../components/HomePage/Filtros'
 import Categorias from '../components/HomePage/Categorias'
 import Lojas from '../components/HomePage/Lojas'
+import Banners from '../components/HomePage/Banners'
 
 export default function HomePage() {
   return (
@@ -27,38 +28,90 @@ export default function HomePage() {
         <Categorias
           campos={
             [
-              "Mercado",
-              "Promoções",
-              "Pizza",
-              "Árabe",
-              "Lanches",
-              "Vegetariana",
-              "Vale-refeição",
-              "Japonesa",
-              "Brasileira",
-              "Bebidas",
-              "Açai",
-              "Doces & Bolos",
-              "Italiana",
-              "Chinesa",
-              "Gourmet"
+              {
+                nome: "Mercado",
+                img: "/dev/1-1.png"
+              },
+              {
+                nome: "Promoções",
+                img: "/dev/1-2.png"
+              },
+              {
+                nome: "Pizza",
+                img: "/dev/1-4.png"
+              },
+              {
+                nome: "Árabe",
+                img: "/dev/1-5.png"
+              },
+              {
+                nome: "Lanches",
+                img: "/dev/1-6.png"
+              },
+              {
+                nome: "Vegetariana",
+                img: "/dev/1-3.png"
+              },
+              {
+                nome: "Vale-refeição",
+                img: "/dev/1-7.png"
+              },
+              {
+                nome: "Japonesa",
+                img: "/dev/1-9.png"
+              },
+              {
+                nome: "Brasileira",
+                img: "/dev/1-13.png"
+              },
+              {
+                nome: "Bebidas",
+                img: "/dev/1-15.png"
+              },
+              {
+                nome: "Açai",
+                img: "/dev/1-8.png"
+              },
+              {
+                nome: "Doces & Bolos",
+                img: "/dev/1-12.png"
+              },
+              {
+                nome: "Gourmet",
+                img: "/dev/1-16.png"
+              },
             ]
           }
         />
 
-        <div className="flex w-full pt-3 space-x-2 overflow-x-scroll no-scrollbar flex-nowrap">
-          <div className="flex-none h-32 p-1 m-1 border border-solid rounded cursor-pointer hover:bg-gray-50 w-72 border-black-100">TesteTeste</div>
-          <div className="flex-none h-32 p-1 m-1 border border-solid rounded cursor-pointer hover:bg-gray-50 w-72 border-black-100">TesteTeste</div>
-          <div className="flex-none h-32 p-1 m-1 border border-solid rounded cursor-pointer hover:bg-gray-50 w-72 border-black-100">TesteTeste</div>
-          <div className="flex-none h-32 p-1 m-1 border border-solid rounded cursor-pointer hover:bg-gray-50 w-72 border-black-100">TesteTeste</div>
-          <div className="flex-none h-32 p-1 m-1 border border-solid rounded cursor-pointer hover:bg-gray-50 w-72 border-black-100">TesteTeste</div>
-          <div className="flex-none h-32 p-1 m-1 border border-solid rounded cursor-pointer hover:bg-gray-50 w-72 border-black-100">TesteTeste</div>
-          <div className="flex-none h-32 p-1 m-1 border border-solid rounded cursor-pointer hover:bg-gray-50 w-72 border-black-100">TesteTeste</div>
-          <div className="flex-none h-32 p-1 m-1 border border-solid rounded cursor-pointer hover:bg-gray-50 w-72 border-black-100">TesteTeste</div>
-          <div className="flex-none h-32 p-1 m-1 border border-solid rounded cursor-pointer hover:bg-gray-50 w-72 border-black-100">TesteTeste</div>
-        </div>
+        {/* 
+              {
+                nome: "Italiana",
+                img: "/dev/1-13.png"
+              },
+              {
+                nome: "Chinesa",
+                img: "/dev/1-14.png"
+              },
+        */}
 
-
+        <Banners
+          campos={
+            [
+              "/dev/2-1.png",
+              "/dev/2-2.png",
+              "/dev/2-3.png",
+              "/dev/2-4.png",
+              "/dev/2-5.png",
+              "/dev/2-6.png",
+              "/dev/2-7.png",
+              "/dev/2-8.png",
+              "/dev/2-9.png",
+              "/dev/2-10.png",
+              "/dev/2-11.png"
+            ]
+          }
+        />
 
         <Lojas />
 
